@@ -13,7 +13,7 @@ const Index = () => {
         <VStack spacing={4} align="center">
           <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZSUyMGluJTIwbmF0dXJlfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
           <Heading as="h1" size="xl">
-            John Doe
+            Still Childhood
           </Heading>
           <VStack spacing={2} align="center">
             <Link href="#" color={linkColor} fontWeight="bold">
