@@ -8,7 +8,7 @@ const Index = () => {
   const iconColor = useColorModeValue("green.600", "green.400");
 
   return (
-    <Box minHeight="100vh" bgGradient={bgGradient} backgroundImage="https://images.unsplash.com/photo-1574170240473-5733a5b43a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBvdmVyZ3Jvd24lMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080" backgroundSize="cover" backgroundPosition="center" display="flex" alignItems="center" justifyContent="center" padding={8}>
+    <Box minHeight="100vh" bgGradient={bgGradient} backgroundImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" backgroundSize="cover" backgroundPosition="center" display="flex" alignItems="center" justifyContent="center" padding={8}>
       <Box
         maxWidth="sm"
         width="full"
