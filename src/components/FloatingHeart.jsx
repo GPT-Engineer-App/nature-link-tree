@@ -8,10 +8,10 @@ const FloatingHeart = ({ top, left }) => {
       position="absolute"
       top={top}
       left={left}
-      animation="floatUp 2s ease-out forwards"
-      opacity={0}
+      animation="float 2s ease-in-out infinite"
+      zIndex={10}
     >
-      <FaHeart color="red" size="2rem" />
+      <FaHeart color="red" size="24px" />
     </Box>
   );
 };

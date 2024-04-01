@@ -4,30 +4,34 @@ import FloatingHeart from "../components/FloatingHeart";
 const Index = () => {
   const [hearts, setHearts] = useState([]);
 
+  const addHeart = () => {
+    const newHeart = {
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+    };
+    setHearts((currentHearts) => [...currentHearts, newHeart]);
+  };
+
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "a" || e.key === "A") {
-        const newHeart = {
-          top: `${Math.random() * 100}%`,
-          left: `${Math.random() * 100}%`,
-        };
-        setHearts((currentHearts) => [...currentHearts, newHeart]);
+    const handleKeyPress = (event) => {
+      if (event.key === "a" || event.key === "A") {
+        addHeart();
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keypress", handleKeyPress);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keypress", handleKeyPress);
     };
   }, []);
 
   return (
-    <div style={{ position: "relative", height: "100vh" }}>
+    <>
       {hearts.map((heart, index) => (
         <FloatingHeart key={index} top={heart.top} left={heart.left} />
       ))}
-    </div>
+    </>
   );
 };
 
