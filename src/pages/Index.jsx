@@ -45,18 +45,60 @@ const Index = () => {
         }}
       >
         <VStack spacing={4} align="center">
-          <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZSUyMGluJTIwbmF0dXJlfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
+          <Image
+            borderRadius="full"
+            boxSize="150px"
+            src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZSUyMGluJTIwbmF0dXJlfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080"
+            alt="Profile"
+            _hover={{
+              transform: "scale(1.05)",
+              boxShadow: "md",
+            }}
+          />
           <Heading as="h1" size="xl">
             Still Childhood
           </Heading>
           <VStack spacing={2} align="center">
-            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+            <Link
+              href="#"
+              color={linkColor}
+              fontWeight="bold"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "md",
+              }}
+            >
               <FaYoutube color={iconColor} style={{ marginRight: "8px" }} /> YouTube
             </Link>
-            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+            <Link
+              href="#"
+              color={linkColor}
+              fontWeight="bold"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "md",
+              }}
+            >
               <FaTiktok color={iconColor} style={{ marginRight: "8px" }} /> TikTok
             </Link>
-            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+            <Link
+              href="#"
+              color={linkColor}
+              fontWeight="bold"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "md",
+              }}
+            >
               <FaDiscord color={iconColor} style={{ marginRight: "8px" }} /> Discord
             </Link>
           </VStack>
