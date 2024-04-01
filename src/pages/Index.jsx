@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, VStack, Heading, Link, Image, useColorModeValue } from "@chakra-ui/react";
-import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaTiktok, FaDiscord } from "react-icons/fa";
 
 const Index = () => {
   const bgGradient = useColorModeValue("linear(to-b, green.200, green.500)", "linear(to-b, green.800, green.900)");
@@ -16,17 +16,14 @@ const Index = () => {
             Still Childhood
           </Heading>
           <VStack spacing={2} align="center">
-            <Link href="#" color={linkColor} fontWeight="bold">
-              <FaTwitter color={iconColor} /> Twitter
+            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+              <FaYoutube color={iconColor} style={{ marginRight: "8px" }} /> YouTube
             </Link>
-            <Link href="#" color={linkColor} fontWeight="bold">
-              <FaInstagram color={iconColor} /> Instagram
+            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+              <FaTiktok color={iconColor} style={{ marginRight: "8px" }} /> TikTok
             </Link>
-            <Link href="#" color={linkColor} fontWeight="bold">
-              <FaGithub color={iconColor} /> GitHub
-            </Link>
-            <Link href="#" color={linkColor} fontWeight="bold">
-              <FaLinkedin color={iconColor} /> LinkedIn
+            <Link href="#" color={linkColor} fontWeight="bold" display="flex" alignItems="center" justifyContent="center">
+              <FaDiscord color={iconColor} style={{ marginRight: "8px" }} /> Discord
             </Link>
           </VStack>
         </VStack>
