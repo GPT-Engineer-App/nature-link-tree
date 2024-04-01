@@ -88,7 +88,7 @@ const Index = () => {
               <FaTiktok color={iconColor} style={{ marginRight: "8px" }} /> TikTok
             </Link>
             <Link
-              href="#"
+              href="https://www.instagram.com/still.childhood/?igsh=M2syNGhpM3p4Y2s3"
               color={linkColor}
               fontWeight="bold"
               display="flex"
@@ -99,7 +99,35 @@ const Index = () => {
                 boxShadow: "md",
               }}
             >
-              <FaDiscord color={iconColor} style={{ marginRight: "8px" }} /> Discord
+              <FaInstagram color={iconColor} style={{ marginRight: "8px" }} /> Instagram
+            </Link>
+            <Link
+              href="https://www.instagram.com/still.childhood/?igsh=M2syNGhpM3p4Y2s3"
+              color={linkColor}
+              fontWeight="bold"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "md",
+              }}
+            >
+              <FaInstagram color={iconColor} style={{ marginRight: "8px" }} /> Instagram
+            </Link>
+            <Link
+              href="https://www.instagram.com/still.childhood/?igsh=M2syNGhpM3p4Y2s3"
+              color={linkColor}
+              fontWeight="bold"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "md",
+              }}
+            >
+              <FaInstagram color={iconColor} style={{ marginRight: "8px" }} /> Instagram
             </Link>
           </VStack>
         </VStack>
