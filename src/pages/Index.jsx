@@ -9,7 +9,41 @@ const Index = () => {
 
   return (
     <Box minHeight="100vh" bgGradient={bgGradient} backgroundImage="https://images.unsplash.com/photo-1574170240473-5733a5b43a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBvdmVyZ3Jvd24lMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080" backgroundSize="cover" backgroundPosition="center" display="flex" alignItems="center" justifyContent="center" padding={8}>
-      <Box maxWidth="sm" width="full" bg={useColorModeValue("white", "gray.700")} boxShadow="lg" rounded="lg" overflow="hidden" padding={6}>
+      <Box
+        maxWidth="sm"
+        width="full"
+        bg={useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(55, 65, 81, 0.8)")}
+        boxShadow="lg"
+        rounded="lg"
+        overflow="hidden"
+        padding={6}
+        position="relative"
+        _before={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: "url('https://images.unsplash.com/photo-1611095973362-88e8e2557e58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxvdmVyZ3Jvd24lMjB2aW5lc3xlbnwwfHx8fDE2ODEyMzQ1Njd8MA&ixlib=rb-4.0.3&q=80&w=1080')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.3,
+          zIndex: -1,
+        }}
+        _after={{
+          content: '""',
+          position: "absolute",
+          top: "-10px",
+          left: "-10px",
+          right: "-10px",
+          bottom: "-10px",
+          border: "2px solid",
+          borderColor: useColorModeValue("green.500", "green.300"),
+          borderRadius: "lg",
+          zIndex: -1,
+        }}
+      >
         <VStack spacing={4} align="center">
           <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489440543286-a69330151c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZSUyMGluJTIwbmF0dXJlfGVufDB8fHx8MTcxMTk2OTY1M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
           <Heading as="h1" size="xl">
